@@ -46,7 +46,7 @@ export class AddItem2 extends Component {
 
     render() {
         return (
-            <div className="container border-black shadow mt-3">
+            <div className="container border-black shadow mt-3" style={{background: '#ededed'}}>
                 <Form className="p-5" onSubmit={ this.sendItemHandler } autoComplete="off">
                     <Form.Group as={Row} controlId="formHorizontalTitle">
                         <Form.Label column sm={2}>
