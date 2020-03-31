@@ -129,7 +129,7 @@ class HomePage extends Component {
                                         />
                                     
                                         <Accordion.Toggle className="mx-2 bg-primary" style={{fontSize: '12px', color: 'white'}} as={Button} variant="link" eventKey={index}>
-                                            Wiew
+                                            View
                                         </Accordion.Toggle>
 
                                         <span className="mx-2 px-2" style={{fontSize: '18px'}}>{ item.title }</span>
