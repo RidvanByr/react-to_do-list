@@ -47,7 +47,7 @@ export class AddItem2 extends Component {
     render() {
         return (
             <div className="container border-black shadow mt-3">
-                <Form className="p-5" onSubmit={ this.sendItemHandler }>
+                <Form className="p-5" onSubmit={ this.sendItemHandler } autoComplete="off">
                     <Form.Group as={Row} controlId="formHorizontalTitle">
                         <Form.Label column sm={2}>
                             {this.props.titleLabel}
