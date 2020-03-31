@@ -98,13 +98,21 @@ class HomePage extends Component {
 
                             let setBackColor = '#f0efef';
                             
-                            item.date === null ? setBackColor = '#f0efef' :
+                            item.date === null ? setBackColor = '#f0efef'
+                             :
                             item.date.getDate() === new Date().getDate() &&
                                 item.date.getMonth() === new Date().getMonth() &&
-                                    item.date.getYear() === new Date().getYear() ? setBackColor = '#fff591' :
-                            item.date.getDate() === new Date().getDate() - 1 ? setBackColor = '#fff591' :
-                            item.date.getTime() < Date.now() ? setBackColor = '#62d2a2' :
-                            item.date.getTime() > Date.now() ? setBackColor = '#f8b195' : setBackColor = '#f0efef'
+                                    item.date.getYear() === new Date().getYear() ? setBackColor = '#fff591'
+                             :                                  
+                            item.date.getDate() === new Date().getDate() - 1 &&
+                                item.date.getMonth() === new Date().getMonth() &&
+                                        item.date.getYear() === new Date().getYear() ? setBackColor = '#fff591'
+                             :
+                            item.date.getTime() < Date.now() ? setBackColor = '#62d2a2'
+                             :
+                            item.date.getTime() > Date.now() ? setBackColor = '#f8b195'
+                             : setBackColor = '#f0efef'
+            
 
                             if (item.isChecked === true) {
                                 setBackColor = '#79bac1'
