@@ -15,9 +15,7 @@ class HomePage extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            items: [
-                { title: 'data 1', date: new Date(), text:'text 1', isChecked: false }
-            ]
+            items: []
         }
     }
 
