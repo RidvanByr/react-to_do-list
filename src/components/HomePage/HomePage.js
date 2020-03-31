@@ -124,7 +124,7 @@ class HomePage extends Component {
                                     <Card.Header>
                                         <Checkbox
                                             onChange={ (e) => this.checkboxHandler( e,index ) }
-                                            checked={ this.state.isChecked }         
+                                            checked={ item.isChecked }         
                                             inputProps={{ 'aria-label': 'primary checkbox' }}
                                         />
                                     
