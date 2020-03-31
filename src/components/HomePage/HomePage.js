@@ -132,7 +132,7 @@ class HomePage extends Component {
                                             Wiew
                                         </Accordion.Toggle>
 
-                                        <span className="mx-2 px-2">{ item.title }</span>
+                                        <span className="mx-2 px-2" style={{fontSize: '18px'}}>{ item.title }</span>
                             
                                         <Button
                                             inverted color='red'
